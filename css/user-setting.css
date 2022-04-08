@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+
+.form-setting{
+    width: 50%;
+    height: 50vh;
+    background-color: yellow;
+    padding: 10px;
+
+}
+form{
+
+    width:90% ;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: space-around;
+}
+
+form label{
+    border: 1px black solid;
+    padding: 20px;
+    align-self: stretch;
+}
