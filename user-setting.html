@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/user-setting.css">
+</head>
+
+<body onload="init()">
+
+    <section class="form-setting">
+        <form class="settings"onsubmit="onSet(event)">
+            <label>E-mail
+                <input type="email" name="email" placeholder="Insert your email here"
+                    onsubmit="onSetEmail(this.value)"></label>
+            <label>Age
+                <input type="range" name="age" min="18" max="120" ></label>
+            <label>Set background color
+                <input type="color" name="bc-color" ></label>
+            <label>Set text color
+                <input type="color" name="txt-color" ></label>
+            <label>Birth Date
+                <input type="date" name="b-date" ></label>
+            <label>Birth Time
+                <input type="time" name="b-time" ></label>
+
+            <button class="sumbit">set</button>
+        </form>
+    </section>
+
+
+    <script src="js/storage-service.js"></script>
+    <script src="js/user-service.js"></script>
+    <script src="js/user-controler.js"></script>
+</body>
+
+</html>
