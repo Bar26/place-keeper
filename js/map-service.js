@@ -1,29 +1,23 @@
 'use strict'
 
 navigator.geolocation.getCurrentPosition(showLocation, handleLocationError)
-
+console.log(navigator.geolocation.getCurrentPosition())
 function initMap() {
-    // The location of Uluru
-    const uluru = { lat: -25.344, lng: 131.036 };
-    // The map, centered at Uluru
+    // The location of eilat
+    const eilat = { lat: 29.557669, lng: 34.951925 };
+    // The map, centered at eilat
     const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 4,
-        center: uluru,
+        zoom: 12,
+        center: eilat,
     });
-    // The marker, positioned at Uluru
+    // The marker, positioned at eilat
     const marker = new google.maps.Marker({
-        position: uluru,
+        position: eilat,
         map: map,
     });
 }
 
-// The location of Uluru
-const uluru = { lat: -25.344, lng: 131.036 };
-// The map, centered at Uluru
-const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
-    center: uluru,
-});
+
 // function showLocation(){
 
 // }
