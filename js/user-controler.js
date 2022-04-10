@@ -1,8 +1,5 @@
 'use strict'
 
-
-
-
 function init() {
     const bcColor = loadFromStorage('bc-color')
     document.body.style.backgroundColor = bcColor
